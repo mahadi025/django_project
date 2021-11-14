@@ -76,12 +76,20 @@ WSGI_APPLICATION = 'FirstProject.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'FirstProject',
+    #     'USER': 'postgres',
+    #     'PASSWORD': '159753',
+    #     'HOST': 'localhost'
+    # },
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'FirstProject',
-        'USER': 'postgres',
+        'USER': 'root',
         'PASSWORD': '159753',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
 
