@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        p.Result{
+            color: Red;
+            font-size:2em;
+            font-style:italic;
+            
+        }
+    </style>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+        <p class="Result">Result {{number1}}+{{number2}} ={{result}}</p>
+    {% endblock %}
+</body>
+</html>

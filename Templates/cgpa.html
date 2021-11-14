@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+</head>
+<body>
+    <form action="CGPA" method="POST">
+    {% csrf_token %}
+        <input type="Number" name="Number of Courses" placeholder="Number of Courses"><br>
+        <input type="text" name="Course Name" placeholder="Course Name">
+        <input type="Number" name="GPA" placeholder="GPA"><br>
+        <input type="Submit"><br>
+    </form>
+</body>
+</html>
